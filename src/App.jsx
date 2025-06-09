@@ -51,7 +51,8 @@ console.log("Table Data:", tableData);
 
       <div>
         {Object.entries(categories).map(([key, label]) => (
-          <button key={key} onClick={() => setCategory(key)}>
+          <button key={key} onClick={() => setCategory(key)}
+             className={category === key ? "active" : ""}>
             {label}
           </button>
         ))}
